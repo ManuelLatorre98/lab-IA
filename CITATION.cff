@@ -8,7 +8,7 @@ authors:
   given-names: "Carlos"
   orcid: "https://orcid.org/0000-0000-0000-0000"
 - family-names: "Villaroel"
-given-names: "Santiago"
+  given-names: "Santiago"
 orcid: "https://orcid.org/0000-0000-0000-0000"
 title: "Laboratorio de Inteligencia Artificial segundo cuatrimestre 2023"
 version: 1.0.0
