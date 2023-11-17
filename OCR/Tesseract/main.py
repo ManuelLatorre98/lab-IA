@@ -66,7 +66,7 @@ segmentation_mode= 6
 OCR_engine_mode = 3
 myConfig = f"--psm {segmentation_mode} --oem {OCR_engine_mode}"
 #image_path= "test.png"
-image_path= "letraManu.png"
+image_path= "logos.jpg"
 getText(myConfig, image_path)
 genBoxes(myConfig, image_path)
 genBoxesWithNames(myConfig, image_path)
