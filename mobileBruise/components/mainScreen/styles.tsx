@@ -6,7 +6,7 @@ const mainScreenStyles= StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     flexDirection:'row',
-    gap:20
+    gap:20,
   }
 })
 

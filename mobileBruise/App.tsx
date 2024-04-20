@@ -12,10 +12,12 @@ LogBox.ignoreLogs([
 function App(): JSX.Element {
   return(
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={"MainScreen"}>
-        <Stack.Screen name={"MainScreen"} component={MainScreen}/>
-        <Stack.Screen name={"Camera"} component={ImageScanner}/>
-        <Stack.Screen name={"ResponseScreen"} component={ResponseScreen}/>
+      <Stack.Navigator initialRouteName={"Reconocimiento de equimosis"}>
+        <Stack.Screen name={"MainScreen"} component={MainScreen} options={{headerTitle: "Reconocimiento de" +
+            " equimosis"}}/>
+        <Stack.Screen name={"Camera"} component={ImageScanner} options={{headerTitle: "Reconocimiento de equimosis"}}/>
+        <Stack.Screen name={"ResponseScreen"} component={ResponseScreen} options={{headerTitle: "Reconocimiento de" +
+            " equimosis"}}/>
       </Stack.Navigator>
     </NavigationContainer>
     /*<View style={{flex:1}}>

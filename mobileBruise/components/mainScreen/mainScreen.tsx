@@ -58,6 +58,7 @@ function MainScreen({navigation }:any){
   const sendPetitionToServer= async (formData: FormData): Promise<{ mensaje:number }>=> {
     return new Promise(async (resolve,reject)=>{
       try{
+        console.log("EO")
         const response = await fetch(
           'http://localhost:5000/predict',{
             method:'POST',
@@ -66,6 +67,7 @@ function MainScreen({navigation }:any){
               'Content-Type': 'multipart/form-data',
             },
           })
+
         const data = (JSON.parse(await response.json()))
         resolve(data)
       }catch(e){

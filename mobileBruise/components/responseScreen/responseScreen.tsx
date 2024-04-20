@@ -20,11 +20,11 @@ function ResponseScreen({route}:any){
       <Image source={{uri:image}} style={[responseScreenStyles.image, isBruise && responseScreenStyles.bruise, !isBruise && responseScreenStyles.notBruise]}/>
 
       {isBruise &&
-        <Text style={responseScreenStyles.message}>Es moreton con un {result.toFixed(4)*100}% de confianza</Text>
+        <Text style={responseScreenStyles.message}>Es equimosis con un {Math.floor(result * 100)}% de confianza</Text>
       }
 
       {!isBruise &&
-        <Text style={responseScreenStyles.message}>No es un moreton con un {confidence*100}% de confianza</Text>
+        <Text style={responseScreenStyles.message}>No es equimosis con un {confidence*100}% de confianza</Text>
       }
 
     </View>
