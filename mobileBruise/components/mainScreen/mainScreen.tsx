@@ -1,4 +1,4 @@
-import { Image, LogBox, TouchableOpacity, View } from "react-native";
+import { Appearance, Image, LogBox, TouchableOpacity, View } from "react-native";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { faImage } from "@fortawesome/free-regular-svg-icons";
 import { faCamera, faPlus } from "@fortawesome/free-solid-svg-icons";
@@ -58,9 +58,8 @@ function MainScreen({navigation }:any){
   const sendPetitionToServer= async (formData: FormData): Promise<{ mensaje:number }>=> {
     return new Promise(async (resolve,reject)=>{
       try{
-        console.log("EO")
         const response = await fetch(
-          'http://localhost:5000/predict',{
+          'http://covindex.uncoma.edu.ar:8080//predict',{
             method:'POST',
             body:formData,
             headers: {

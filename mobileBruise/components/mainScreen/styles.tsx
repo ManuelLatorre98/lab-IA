@@ -7,6 +7,7 @@ const mainScreenStyles= StyleSheet.create({
     alignItems:'center',
     flexDirection:'row',
     gap:20,
+    backgroundColor:'rgb(44, 44, 44)'
   }
 })
 

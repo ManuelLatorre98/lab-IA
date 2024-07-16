@@ -13,7 +13,6 @@ const imageScannerStyles = StyleSheet.create({
   },
   capture: {
     flex: 0,
-    backgroundColor: '#fff',
     borderRadius: 5,
     padding: 15,
     paddingHorizontal: 20,

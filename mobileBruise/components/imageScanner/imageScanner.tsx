@@ -36,7 +36,7 @@ function ImageScanner({route}:any){
       />
       <View style={{ flex: 0, flexDirection: 'row', justifyContent: 'center' }}>
         <TouchableOpacity onPress={takePicture} style={imageScannerStyles.capture}>
-          <Text style={{ fontSize: 14 }}> SNAP </Text>
+          <Text style={{ fontSize: 14, color:'white'}}> CAPTURAR </Text>
         </TouchableOpacity>
       </View>
     </View>
